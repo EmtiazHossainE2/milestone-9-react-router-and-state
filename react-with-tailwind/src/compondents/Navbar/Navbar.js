@@ -11,11 +11,11 @@ const Navbar = () => {
         { id: 4, name: 'Coupons', link: './coupons' },
     ]
     return (
-        <nav>
-            <div onClick={() => setOpen(!open)} className="h-8 w-8 md:hidden text-blue-500" >
+        <nav className='bg-lime-500 w-full '>
+            <div onClick={() => setOpen(!open)} className="h-8 w-8 md:hidden text-white " >
                 {open ? <XIcon></XIcon> : <MenuIcon ></MenuIcon>}
             </div>
-            <ul className={`md:flex justify-center absolute ease-in duration-700 ${open ? 'top-10' : 'top-[-300px]'}`}>
+            <ul className={`md:flex justify-center bg-lime-500 text-center w-full absolute md:static ease-in duration-1000 ${open ? 'top-8' : 'top-[-300px]'}`}>
                 {
                     routes.map(route => <Link key={route.id} route={route}></Link>)
                 }
