@@ -11,6 +11,7 @@ const Header = () => {
                     <ul id="MenuItems">
                         <li><CustomLink to="./">Home</CustomLink></li>
                         <li><CustomLink to="./about">About</CustomLink></li>
+                        <li><CustomLink to="./posts">Posts</CustomLink></li>
                         <li><CustomLink to="./contact">Contact Us</CustomLink></li>
                         <li><CustomLink to="./friends">Friends</CustomLink></li>
                     </ul>
